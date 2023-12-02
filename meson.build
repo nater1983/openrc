@@ -98,9 +98,7 @@ endif
 bindir = rootprefix / get_option('bindir')
 libdir = rootprefix / get_option('libdir')
 libexecdir = get_option('libexecdir')
-if os == 'Linux' and libexecdir == 'libexec'
-  libexecdir = 'lib'
-endif
+
 libexecdir = rootprefix / libexecdir
 rc_libexecdir = libexecdir / 'rc'
 rc_bindir = rc_libexecdir / 'bin'
